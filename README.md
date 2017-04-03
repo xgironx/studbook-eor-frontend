@@ -1,3 +1,4 @@
+#jay giro
 # studbook-eor-frontend
 
 This README outlines the details of collaborating on this Ember application.
