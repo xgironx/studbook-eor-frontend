@@ -1,8 +1,6 @@
                                       {{!-- ################################
                                       201704041333L   EL MARTES   JAY @ GA --}}
-THIS IS SOME TEST TEXT I WANTED TO SEE
-
-IT COMES FROM
+FROM
 
 ember/app/templates/stallions.hbs
 
@@ -10,17 +8,25 @@ VIA
 
 ember/app/templates/application.hbs
 
-AND ITS
-
-SO THERE
-sasasddsadf
 
 <ul>
-  THIS SHOWS THAT WE ARE GETTING INTO THE
+
+  INTO
+
+  ember/app/templates/stallions.hbs
+
   ul THAT CALLS FOR
-  stallion VIA
+
   stallion-cover stallion=stallion
+
   {{#each model as |stallion|}}
-    {{stallion-cover stallion=stallion}}
+        INSIDE OF #each model as |stallion|
+        stallion-cover title="List of STALLIONS" stallion=stallion
+  {{stallion-cover title="List of STALLIONS" stallion=stallion}}
+                                        {{!--stallion-cover stallion=stallion--}}
+
+                                          {{!-- FROM DEMO ember JOBS BOARD job-list title="List of Jobs" jobs=model--}}
+
   {{/each}}
+
 </ul>
