@@ -1,4 +1,10 @@
-
+                                  // // {{!-- ################################
+                                  // // 201704051314L   EL MIERCOLES   JAY @ GA --}}
+                                  // TODAY I LEARNED THAT
+                              // ember generate resource stallions ;
+                              // ember generate route stallion ;
+                              // ember generate route stallion/new ;
+                                  // WIPED OUT THIS FILE SO I PASTED ATTR BACK IN FROM GH GITHUB
 import DS from 'ember-data';
 
 export default DS.Model.extend({

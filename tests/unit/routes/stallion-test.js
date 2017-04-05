@@ -6,7 +6,7 @@
                                               // ember generate route stallion/new ;
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:stallions', 'Unit | Route | stallions', {
+moduleFor('route:stallion', 'Unit | Route | stallion', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

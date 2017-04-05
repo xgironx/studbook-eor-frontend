@@ -1,0 +1,19 @@
+                                          {{!-- ################################ --}}
+                                          {{!--201704051314L   EL MIERCOLES   JAY @ GA --}}
+                                          {{!-- THIS WAS HERE BY DEFAULT --}}
+                                          {{!--outlet--}}
+<h3>stallion New</h3>
+<form>
+  <div>
+    <label>name:</label>
+    {{input type="text" value=model.name}}
+  </div>
+  <div>
+    <label>age:</label>
+    {{textarea rows="5" value=model.age}}
+  </div>
+  <div>
+    <button {{action 'save'}}>save me</button>
+    <button {{action 'cancel'}}>forget me</button>
+  </div>
+</form>
