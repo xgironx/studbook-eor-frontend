@@ -1,32 +1,29 @@
                                       {{!-- ################################
-                                      201704041333L   EL MARTES   JAY @ GA --}}
-FROM
-
-ember/app/templates/stallions.hbs
-
-VIA
-
-ember/app/templates/application.hbs
-
-
+                                      201704041333L   EL MARTES   JAY @ GA
+                                      <!-- FROM
+                                      <br />
+                                      ember/app/templates/stallions.hbs
+                                      <br />
+                                      VIA
+                                      <br />
+                                      ember/app/templates/application.hbs
+                                      <br /><!-- <br />
+                                      ember/app/templates/stallions.hbs
+                                    <br /> --> --}}
 <ul>
 
-  INTO
-
-  ember/app/templates/stallions.hbs
-
-  ul THAT CALLS FOR
-
-  stallion-cover stallion=stallion
-
   {{#each model as |stallion|}}
-        INSIDE OF #each model as |stallion|
-        stallion-cover title="List of STALLIONS" stallion=stallion
-  {{stallion-cover title="List of STALLIONS" stallion=stallion}}
-                                        {{!--stallion-cover stallion=stallion--}}
-
+                                      {{!-- INSIDE THE EACH LOOP AS |STALLION| <br /> --}}
+  {{stallion-cover stallion=stallion}}
+                                          {{!--GIRO: #################################################
+                                          stallion-cover IS A COMPONENT BLDG blockquote
+                                                AND ITS NAME MEANS SOMETHING, IE, THE NAME OF THE
+                                          app/templates/components/stallion-cover.hbs
+                                                THATS WHY THE NAME
+                                          stallion-cover
+                                                HAD TO MATCH THE FILENAME SO IT COULD FIND IT --}}
+                                        {{!--stallion-cover stallion=stallion
+                                        ################################################# --}}
                                           {{!-- FROM DEMO ember JOBS BOARD job-list title="List of Jobs" jobs=model--}}
-
   {{/each}}
-
 </ul>

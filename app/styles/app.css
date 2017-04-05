@@ -1,5 +1,13 @@
 /*// {{!-- ################################
 // 201704041333L   EL MARTES   JAY @ GA --}}*/
+.imgUrl {
+  max-height: 333px;
+  max-width: 177px;
+  display: flex;
+  align-items: center;
+  /*align-content: space-between;*/
+  justify-content: center;
+}
 
 body {
   font-family: Courier, monospace;
