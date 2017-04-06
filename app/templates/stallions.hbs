@@ -2,23 +2,32 @@
                         {{!--201704051314L   EL MIERCOLES   JAY @ GA --}}
                         {{!-- THIS WAS HERE BY DEFAULT --}}
                         {{!--outlet--}}
-<h3>stallions Index</h3>
-{{#link-to 'stallion.new'}}New stallion{{/link-to}}
-<br/>
-<br/>
-<br/>
-<ul>
-  {{#each model as |stallion|}}
-  {{stallion-cover stallion=stallion}}
-    <li>
-      <button {{action 'delete' stallion}}>Delete</button>
-    </li>
-  {{/each}}
-</ul>
+                        {{!-- ################################ --}}
+                        {{!--#--}}
+                        {{!--201704061102L   EL JUEVES   JAY @ GA --}}
+                        {{!--EVS AND I SPENT WEDNESDAY NIGHT TRYING TO GET
+                      link-to FOR LINK TO SHOW VIEW/TEMPLATE WORKING INSIDE OF THE LOOP --}}
+                      {{!#each model as |stallion|--}}
+                        {{!--BUT JUSTIN SHOWED ME THAT THE CODE IS CALLING
+                      stallion-cover
+                        AND THAT THEREFORE THE LINK NEEDED TO BE IN THAT FILE:
+                      app/templates/components/stallion-cover.hbs --}}
+                        {{!--SEABISCUIT INSIDE #each model LOOP.LI--}}
+                        {{!--#link-to 'stallion' stallion   THIS BLOWS UP LINK-TO--}}
+                        {{!#link-to 'stallion'--}}
+                          {{!--stallion.name--}}
+                        {{!--/link-to--}}
+<h3>STALLIONS INDEX VIEW/TEMPLATE</h3>
 
-
-{{#link-to 'stallion' stallion}}                 {{!--THIS link-to
-                                'stallion'        POINTS BAK TO FILE
-                                 stallion.hbs' --}}
-  {{stallion.name}}
+{{#link-to 'stallion.new'}}
+        LINK-TO CREATE NEW STALLION stallion.new
 {{/link-to}}
+
+<br/> <br/> <br/>
+
+<ul>
+    {{#each model as |stallion|}}
+        {{stallion-cover stallion=stallion}}   {{!--CALLS app/templates/components/stallion-cover.hbs--}}
+        <li> <button {{action 'delete' stallion}}>Delete</button> </li>
+    {{/each}}
+</ul>

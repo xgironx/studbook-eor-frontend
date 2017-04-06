@@ -1,7 +1,7 @@
-                          // {{!-- ################################
-                          // 201704051239L   EL MIERCOLES   JAY @ GA --}}
+                                                // {{!-- ################################
+                                                // 201704051239L   EL MIERCOLES   JAY @ GA --}}
 import Ember from 'ember';
-// app/routes/stallion/new.js
+                                                // app/routes/stallion/new.js
 export default Ember.Route.extend({
   model() {
       return {};

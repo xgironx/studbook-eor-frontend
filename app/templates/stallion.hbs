@@ -3,10 +3,30 @@
                                           {{!-- http://9elements.com/io/an-ember-js-application-with-a-rails-api-backend/ --}}
                                           {{!-- THIS WAS HERE BY DEFAULT --}}
                                           {{!--outlet--}}
-{{#link-to 'stallions'}}Back to the stallions list{{/link-to}}
-<h3>stallion Show</h3>
-<h2>{{model.name}}</h2>
-<p>{{model.age}}</p>
+{{#link-to 'stallions'}}
+    Take me back to the stallions list
+{{/link-to}}
+
+<p>Stallion SHOW VIEW/TEMPLATE</p>     {{!--model.name--}}
+
+INSIDE OF
+h2
+WE SHOULD SEE
+
+stallion.name
+
+<h3>
+
+    <p> model.id: {{model.id}}</p>
+    <p>model.name:  {{model.name}}</p>
+                                          {{!--model.name--}}
+    <p>model.age: {{model.age}}</p>
+    <p>model.imgUrl: {{model.imgUrl}}</p>
+                                            {{!-- <strong>{{stallion.name</strong><br><br> --}}
+    imgUrl.img:  <img class='imgUrl' src={{model.imgUrl}}>
+</h3>
+
+                                          {{!--model.age--}}
                                           {{!--<!-- <div>--}}
                                           {{!--  <strong>Comments( {{model.comments.length ):</strong>--}}
                                           {{!--  {{#each model.comments as |comment|--}}

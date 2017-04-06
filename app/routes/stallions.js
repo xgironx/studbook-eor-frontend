@@ -21,7 +21,14 @@ import Ember from 'ember';
                                     // programmatically, makes the
                                     // model avail to the
                                     // hbs files
+// NOW IN stallions.js
 export default Ember.Route.extend({
-                                    model()  { return this.get('store').findAll('stallion'); },
-                                    actions: { delete(stallion) { stallion.deleteRecord(); stallion.save(); } }
+                                            // model()  { return this.get('stallion').findAll('stallion'); },
+                                            // model()  { return this.get('model').findAll('stallion'); },
+                                            // this.get('store').createRecord('stallion', this.currentModel);
+                                    model: function() { return this.get('store').findAll('stallion');                   },
+                                    // model()           { return this.get('store').findAll('stallion');                   },
+                                    // model: function() { return this.get('store').findAll('stallion',this.currentModel); },
+                                    // model()           { return this.get('store').findAll('stallion',this.currentModel); },
+                                    actions:          { delete(stallion) { stallion.deleteRecord(); stallion.save(); }  }
                                   });
