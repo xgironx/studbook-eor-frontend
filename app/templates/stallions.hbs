@@ -3,16 +3,22 @@
                         {{!-- THIS WAS HERE BY DEFAULT --}}
                         {{!--outlet--}}
 <h3>stallions Index</h3>
+{{#link-to 'stallion.new'}}New stallion{{/link-to}}
+<br/>
+<br/>
+<br/>
 <ul>
   {{#each model as |stallion|}}
+  {{stallion-cover stallion=stallion}}
     <li>
-      {{#link-to 'stallion' stallion}}                 {{!--THIS link-to 
-                                      'stallion'        POINTS BAK TO FILE
-                                       stallion.hbs' --}}
-        {{stallion.name}}
-      {{/link-to}}
       <button {{action 'delete' stallion}}>Delete</button>
     </li>
   {{/each}}
 </ul>
-{{#link-to 'stallion.new'}}New stallion{{/link-to}}
+
+
+{{#link-to 'stallion' stallion}}                 {{!--THIS link-to
+                                'stallion'        POINTS BAK TO FILE
+                                 stallion.hbs' --}}
+  {{stallion.name}}
+{{/link-to}}
