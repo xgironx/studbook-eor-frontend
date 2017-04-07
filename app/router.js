@@ -21,7 +21,8 @@ Router.map(function() {
   this.route('stallions',    {path: '/'});
   this.route('stallion.new', {path: '/stallions/new'});
   this.route('stallion',     {path: '/stallions/:stallion_id'});
-  // this.route('stallion.update', {path: '/stallions/update'});
+  // this.route('stallion',     {path: '/stallions/:id'});
+  this.route('stallion.update', {path: '/stallions/update'});
 });
 export default Router;
 

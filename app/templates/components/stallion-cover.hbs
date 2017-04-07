@@ -4,10 +4,11 @@
                                               201704061129L   EL JUEVES   JAY @ GA --}}
                                               {{!--https://emberigniter.com/building-user-interface-around-ember-data-app/--}}
 <li>
+    <p>stallion.id: {{stallion.id}}</p>
                                               {{!--INSIDE OF stallion-cover.hbs CALLED FROM stallions.hbs WITH stallion-cover stallion=stallion--}}
     {{#link-to 'stallion' stallion}}          {{!--THE FIRST ARG SPECIFIES route FROM router.js. THE SECOND ARG SPECIFIES WHICH stallion --}}
 
-        <strong>{{stallion.name}}</strong><br><br>
+        <strong>{{stallion.name}}</strong><br>
 
         <img class='imgUrl' src={{stallion.imgUrl}}>
 

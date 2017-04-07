@@ -7,11 +7,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    // model: function(params)  { return this.store.find('stallion', params.stallion_id); }
-    // model: function(params)  { return this.model.find('stallion', params.stallion_id); }
-    // model: function(params)  { return this.store.find('stallion', params.stallion_id); }
+
     model: function(params)  { return this.get('store').find('stallion', params.stallion_id); }
-    // model()  { return this.get('store').findAll('stallion'); },
-    // model: function(params)  { return this.get('model').find('stallion', params.stallion_id); }
+    // model: function(params)  { return this.get('store').find('stallion', (params[:id])); }
     // actions: { delete(stallion) { stallion.deleteRecord(); stallion.save(); } }
   });
